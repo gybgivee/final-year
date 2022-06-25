@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <title>Website</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Semantics UI CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css" />
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/mystyle.css"/>
+    <!-- DataTables -->
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap4.min.css">
+</head>
+<body>
+    <header id="header" class="bg-light pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <a href="index.html" class="navbar-brand"><img src="img/logo/rainforcasting.png" alt="logo" class="ui image large"></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 mt-2 text-center">
+                    <h3>เว็บไซต์ให้บริการข้อมูลปริมาณน้ำฝนรายเดือนของจังหวัดขอนแก่น</h3>
+                </div>
+            </div>
+        </div>
+    </header>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">หน้าแรก</a>
+                        </li>
+                        <!--
+						<li class="nav-item">
+                            <a class="nav-link" href="#">ลงทะเบียนใช้งาน</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">เกี่ยวกับระบบ</a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="content-inner">
+        <section id="tables">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h3>เกี่ยวกับระบบ</h3>
+                        <p class="ti-20">ผู้วิจัยมีวัตถุประสงค์เพื่อพัฒนาเว็บให้บริการพยากรณ์ปริมาณน้ำฝนรายเดือนของเเต่ละอำเภอในจังหวัดขอนแก่นที่ได้จากการพยากรณ์ของตัวแบบที่เหมาะสม
+                             เพื่อให้ข้อมูลกับหน่วยงานที่เกี่ยวข้องสามารถวางแผนบริหารจัดการน้ำได้อย่างมีประสิทธิภาพ</p>
+                    </div>
+                </div>
+                <div class="row">
+				<!--
+                    <div class="col-lg-12 mt-5">
+                        <h3>การขอใช้บริการ TMDAPI</h3>
+                        <p class="ti-20">หน่วยงาน/องค์กร หรือบุคคลผู้ประสงค์ใช้บริการข้อมูลผ่าน TMDAPI ควรลงทะเบียนใช้งาน
+                             เพื่อกรมฯ จะได้เก็บไว้เป็นข้อมูลประกอบในการปรับปรุงบริการต่อไป</p>
+                </div>-->
+                    </div>
+            </div>
+        </section>
+		<img src="img/kk.jpg"  class="rounded mx-auto d-block"  alt="Responsive image" width="50%" >
+        <section id="tables">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!-- Table -->
+                        <table id="example" class="display table table-hover table-responsive-sm table-striped table-bordered mt-3" cellspacing="0"
+                            width="100%">
+                            <thead id="thead_example">
+                                <tr>
+                                    <th>No</th>
+                                    <th>API Name</th>
+                                    <th>Version</th>
+                                    <th>Description</th>
+                                    <th>References</th>
+                                </tr>
+                            </thead>
+							<div class="col-lg-12">
+							    <h2>พยากรณ์น้ำฝนรายอำเภอประจำเดือน พฤษภาคม 2561</h2>
+						    </div>
+                            <tbody>
+							<!--
+                                <tr>
+                                    <td>1</td>
+                                    <td>RainForcastingTomorrow</td>
+                                    <td>1.00</td>
+                                    <td>รายงานแสดงน้ำฝนเฉลี่ยล่วงหน้า 1 วัน</td>
+                                    <td><a href="document/text/1day.txt" target="_blank"><i class="far fa-file-alt"></i></a> | <a href="document/text/1day.txt" target="_blank"><i class="far fa-file-pdf"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>RainForcasting7Days</td>
+                                    <td>1.00</td>
+                                    <td>รายงานแสดงน้ำฝนเฉลี่ยล่วงหน้า 7 วัน</td>
+                                    <td><a href="document/text/7days.txt" target="_blank"><i class="far fa-file-alt"></i></a> | <a href="document/text/7days.txt" target="_blank"><i class="far fa-file-pdf"></i></a></td>
+                                </tr>
+								-->
+                                <tr>
+                                    <td>1</td>
+                                    <td>RainForcastingMonth</td>
+                                    <td>1.00</td>
+                                    <td>อำเเภอบ้านฝาง</td>
+                                    <td><a href="document/text/banfang_may.txt" target="_blank"><i class="fa fa-file-alt"></i></a> | <a href="document/pdf/banfang_may.pdf" target="_blank"><i class="far fa-file-pdf"></i></a></td>
+                                </tr>
+								<tr>
+                                    <td>2</td>
+                                    <td>RainForcastingMonth</td>
+                                    <td>1.00</td>
+                                    <td>อำเเภอบ้านเเฮด</td>
+                                    <td><a href="document/text/banhad_may.txt" target="_blank"><i class="fa fa-file-alt"></i></a> | <a href="document/pdf/banhad_may.pdf" target="_blank"><i class="far fa-file-pdf"></i></a></td>
+                                </tr>
+								<tr>
+                                    <td>3</td>
+                                    <td>RainForcastingMonth</td>
+                                    <td>1.00</td>
+                                    <td>อำเเภอบ้านไผ่</td>
+                                    <td><a href="document/text/banpai_may.txt" target="_blank"><i class="far fa-file-alt"></i></a> | <a href="document/pdf/banpai_may.pdf" target="_blank"><i class="far fa-file-pdf"></i></a></td>
+                                </tr>
+								<tr>
+                                    <td>4</td>
+                                    <td>RainForcastingMonth</td>
+                                    <td>1.00</td>
+                                    <td>อำเเภอชนบท</td>
+                                    <td><a href="document/text/chonnabut_may.txt" target="_blank"><i class="far fa-file-alt"></i></a> | <a href="document/pdf/chonnabut_may.pdf" target="_blank"><i class="far fa-file-pdf"></i></a></td>
+                                </tr>
+								<tr>
+                                    <td>5</td>
+                                    <td>RainForcastingMonth</td>
+                                    <td>1.00</td>
+                                    <td>อำเเภอชุมเเพ</td>
+                                    <td><a href="document/text/chumpa_may.txt" target="_blank"><i class="far fa-file-alt"></i></a> | <a href="document/pdf/chumpa_may.pdf" target="_blank"><i class="far fa-file-pdf"></i></a></td>
+                                </tr>
+								<tr>
+                                    <td>6</td>
+                                    <td>RainForcastingMonth</td>
+                                    <td>1.00</td>
+                                    <td>อำเเภอโคกโพธิ์ชัย</td>
+                                    <td><a href="document/text/cokpochai_may.txt" target="_blank"><i class="far fa-file-alt"></i></a> | <a href="document/pdf/cokpochai_may.pdf" target="_blank"><i class="far fa-file-pdf"></i></a></td>
+                                </tr>
+								<tr>
+                                    <td>7</td>
+                                    <td>RainForcastingMonth</td>
+                                    <td>1.00</td>
+                                    <td>อำเเภอกระนวน</td>
+                                    <td><a href="document/text/kanon_may.txt" target="_blank"><i class="far fa-file-alt"></i></a> | <a href="document/pdf/kanon_may.pdf" target="_blank"><i class="far fa-file-pdf"></i></a></td>
+                                </tr>
+								<tr>
+                                    <td>8</td>
+                                    <td>RainForcastingMonth</td>
+                                    <td>1.00</td>
+                                    <td>อำเเภอเมือง</td>
+                                    <td><a href="document/text/muang_may.txt" target="_blank"><i class="far fa-file-alt"></i></a> | <a href="document/pdf/muang_may.pdf" target="_blank"><i class="far fa-file-pdf"></i></a></td>
+                                </tr>
+								<tr>
+                                    <td>9</td>
+                                    <td>RainForcastingMonth</td>
+                                    <td>1.00</td>
+                                    <td>อำเเภอมัญจาคิรี</td>
+                                    <td><a href="document/text/munja_may.txt" target="_blank"><i class="far fa-file-alt"></i></a> | <a href="document/pdf/munja_may.pdf" target="_blank"><i class="far fa-file-pdf"></i></a></td>
+                                </tr>
+								<tr>
+                                    <td>10</td>
+                                    <td>RainForcastingMonth</td>
+                                    <td>1.00</td>
+                                    <td>อำเเภอหนองนาคำ</td>
+                                    <td><a href="document/text/nongnakum_may.txt" target="_blank"><i class="far fa-file-alt"></i></a> | <a href="document/pdf/nongnakum_may.pdf" target="_blank"><i class="far fa-file-pdf"></i></a></td>
+                                </tr>
+								<tr>
+                                    <td>11</td>
+                                    <td>RainForcastingMonth</td>
+                                    <td>1.00</td>
+                                    <td>อำเเภอหนองเรือ</td>
+                                    <td><a href="document/text/nongrua_may.txt" target="_blank"><i class="far fa-file-alt"></i></a> | <a href="document/pdf/nongrua_may.pdf" target="_blank"><i class="far fa-file-pdf"></i></a></td>
+                                </tr>
+								<tr>
+                                    <td>12</td>
+                                    <td>RainForcastingMonth</td>
+                                    <td>1.00</td>
+                                    <td>อำเเภอหนองสองห้อง</td>
+                                    <td><a href="document/text/nongsonghong_may.txt" target="_blank"><i class="far fa-file-alt"></i></a> | <a href="document/pdf/nongsonghong_may.pdf" target="_blank"><i class="far fa-file-pdf"></i></a></td>
+                                </tr>
+								<tr>
+                                    <td>13</td>
+                                    <td>RainForcastingMonth</td>
+                                    <td>1.00</td>
+                                    <td>อำเเภอโนนศิลา</td>
+                                    <td><a href="document/text/nonsila_may.txt" target="_blank"><i class="far fa-file-alt"></i></a> | <a href="document/pdf/nonsila_may.pdf" target="_blank"><i class="far fa-file-pdf"></i></a></td>
+                                </tr>
+								<tr>
+                                    <td>14</td>
+                                    <td>RainForcastingMonth</td>
+                                    <td>1.00</td>
+                                    <td>อำเเภอน้ำพอง</td>
+                                    <td><a href="document/text/numpong_may.txt" target="_blank"><i class="far fa-file-alt"></i></a> | <a href="document/pdf/numpong_may.pdf" target="_blank"><i class="far fa-file-pdf"></i></a></td>
+                                </tr>
+								<tr>
+                                    <td>15</td>
+                                    <td>RainForcastingMonth</td>
+                                    <td>1.00</td>
+                                    <td>อำเเภอเปือยน้อย</td>
+                                    <td><a href="document/text/peonnoi_may.txt" target="_blank"><i class="far fa-file-alt"></i></a> | <a href="document/pdf/peonnoi_may.pdf" target="_blank"><i class="far fa-file-pdf"></i></a></td>
+                                </tr>
+								<tr>
+                                    <td>16</td>
+                                    <td>RainForcastingMonth</td>
+                                    <td>1.00</td>
+                                    <td>อำเเภอพล</td>
+                                    <td><a href="document/text/pon_may.txt" target="_blank"><i class="far fa-file-alt"></i></a> | <a href="document/pdf/pon_may.pdf" target="_blank"><i class="far fa-file-pdf"></i></a></td>
+                                </tr>
+								<tr>
+                                    <td>17</td>
+                                    <td>RainForcastingMonth</td>
+                                    <td>1.00</td>
+                                    <td>อำเเภอพระยืน</td>
+                                    <td><a href="document/text/prayeon_may.txt" target="_blank"><i class="far fa-file-alt"></i></a> | <a href="document/pdf/prayeon_may.pdf" target="_blank"><i class="far fa-file-pdf"></i></a></td>
+                                </tr>
+								<tr>
+                                    <td>18</td>
+                                    <td>RainForcastingMonth</td>
+                                    <td>1.00</td>
+                                    <td>อำเเภอภูผาม่าน</td>
+                                    <td><a href="document/text/pupaman_may.txt" target="_blank"><i class="far fa-file-alt"></i></a> | <a href="document/pdf/pupaman_may.pdf" target="_blank"><i class="far fa-file-pdf"></i></a></td>
+                                </tr>
+								<tr>
+                                    <td>19</td>
+                                    <td>RainForcastingMonth</td>
+                                    <td>1.00</td>
+                                    <td>อำเเภอสีชมพู</td>
+                                    <td><a href="document/text/srichompoo_may.txt" target="_blank"><i class="far fa-file-alt"></i></a> | <a href="document/pdf/srichompoo_may.pdf" target="_blank"><i class="far fa-file-pdf"></i></a></td>
+                                </tr>
+								<tr>
+                                    <td>20</td>
+                                    <td>RainForcastingMonth</td>
+                                    <td>1.00</td>
+                                    <td>อำเเภอสวนกวาง</td>
+                                    <td><a href="document/text/suankwang_may.txt" target="_blank"><i class="far fa-file-alt"></i></a> | <a href="document/pdf/suankwang_may.pdf" target="_blank"><i class="far fa-file-pdf"></i></a></td>
+                                </tr>
+								<tr>
+                                    <td>21</td>
+                                    <td>RainForcastingMonth</td>
+                                    <td>1.00</td>
+                                    <td>อำเเภอซำสูง</td>
+                                    <td><a href="document/text/sumsung_may.txt" target="_blank"><i class="far fa-file-alt"></i></a> | <a href="document/pdf/sumsung_may.pdf" target="_blank"><i class="far fa-file-pdf"></i></a></td>
+                                </tr>
+								<tr>
+                                    <td>22</td>
+                                    <td>RainForcastingMonth</td>
+                                    <td>1.00</td>
+                                    <td>อำเเภออุบลรัตน์</td>
+                                    <td><a href="document/text/ubonrat_may.txt" target="_blank"><i class="far fa-file-alt"></i></a> | <a href="document/pdf/ubonrat_may.pdf" target="_blank"><i class="far fa-file-pdf"></i></a></td>
+                                </tr>
+								<tr>
+                                    <td>23</td>
+                                    <td>RainForcastingMonth</td>
+                                    <td>1.00</td>
+                                    <td>อำเเภอเวียงเก่า</td>
+                                    <td><a href="document/text/weingkao_may.txt" target="_blank"><i class="far fa-file-alt"></i></a> | <a href="document/pdf/weingkao_may.pdf" target="_blank"><i class="far fa-file-pdf"></i></a></td>
+                                </tr>
+								<tr>
+                                    <td>24</td>
+                                    <td>RainForcastingMonth</td>
+                                    <td>1.00</td>
+                                    <td>อำเเภอเเวงน้อย</td>
+                                    <td><a href="document/text/wangnoi_may.txt" target="_blank"><i class="far fa-file-alt"></i></a> | <a href="document/pdf/wangnoi_may.pdf" target="_blank"><i class="far fa-file-pdf"></i></a></td>
+                                </tr>
+								<tr>
+                                    <td>25</td>
+                                    <td>RainForcastingMonth</td>
+                                    <td>1.00</td>
+                                    <td>อำเเภอเเวงใหญ่</td>
+                                    <td><a href="document/text/wangyai_may.txt" target="_blank"><i class="far fa-file-alt"></i></a> | <a href="document/pdf/wangyai_may.pdf" target="_blank"><i class="far fa-file-pdf"></i></a></td>
+                                </tr>
+								<tr>
+                                    <td>26</td>
+                                    <td>RainForcastingMonth</td>
+                                    <td>1.00</td>
+                                    <td>อำเเภอภูเวียง</td>
+                                    <td><a href="document/text/phuweing_may.txt" target="_blank"><i class="far fa-file-alt"></i></a> | <a href="document/pdf/phuweing_may.pdf" target="_blank"><i class="far fa-file-pdf"></i></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+                                
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+	<script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
+</body>
+</html>
